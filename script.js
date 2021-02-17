@@ -18,8 +18,8 @@ function changeOption(e) {
 
     // calculate tip and total amount owed
     tip = e.currentTarget.value * billAmount.value / people.value;
-    tipAmount.textContent = `Tip Amount: ${parseFloat(tip).toFixed(2)}`
-    total.textContent = `Total: ${(parseFloat(billAmount.value) + (parseFloat(tip) * people.value)).toFixed(2)}` 
+    tipAmount.textContent = `Tip Amount: $${parseFloat(tip).toFixed(2)} per person`
+    total.textContent = `Total: $${(parseFloat(billAmount.value) + (parseFloat(tip) * people.value)).toFixed(2)/ people.value} per person` 
         
 }
 
